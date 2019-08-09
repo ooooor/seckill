@@ -9,7 +9,7 @@
         <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/miaosha" userId="root" password="root">
         </jdbcConnection>
         <!--生成DataObject类存放位置-->
-        <javaModelGenerator targetPackage="com.imooc.miaoshaproject.dataobject" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.rong.seckill.dataobject" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -23,7 +23,7 @@
                 type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
                 type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.imooc.miaoshaproject.dao" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.rong.seckill.dao" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
