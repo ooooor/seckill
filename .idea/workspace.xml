@@ -2,66 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0c0b38a-28d4-4bbd-ad09-026de6899bd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/viewobject/ItemVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/viewobject/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/ItemModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/OrderModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/PromoModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/UserModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/ItemStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Promo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Sequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/StockLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/UserPassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/config/WebServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/config/WebServerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/controller/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/controller/viewobject/ItemVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/controller/viewobject/UserVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/controller/viewobject/ZuulException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/viewobject/ZuulException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dao/ItemDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/ItemDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dao/ItemStockDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/ItemStockDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dao/OrderDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/OrderDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dao/PromoDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/PromoDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dao/SequenceDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/SequenceDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dao/StockLogDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/StockLogDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dao/UserDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/UserDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dao/UserPasswordDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/UserPasswordDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dataobject/ItemDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/ItemDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dataobject/ItemStockDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/ItemStockDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dataobject/OrderDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/OrderDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dataobject/PromoDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/PromoDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dataobject/SequenceDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/SequenceDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dataobject/StockLogDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/StockLogDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dataobject/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/UserDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/dataobject/UserPasswordDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/UserPasswordDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/error/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/error/BusinessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/error/CommonError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/error/CommonError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/error/EmBusinessError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/error/EmBusinessError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/mq/MqConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/mq/MqConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/mq/MqProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/mq/MqProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/response/CommonReturnType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/response/CommonReturnType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/serializer/JodaDateTimeJsonDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/serializer/JodaDateTimeJsonDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/serializer/JodaDateTimeJsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/serializer/JodaDateTimeJsonSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/CacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/CacheService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/PromoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/PromoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/impl/CacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/CacheServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/ItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/impl/PromoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/PromoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/model/ItemModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/model/OrderModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/model/PromoModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/model/UserModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/util/CodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/util/CodeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/validator/ValidationResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/validator/ValidationResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/validator/ValidatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/validator/ValidatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/ItemDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/ItemDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/ItemStockDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/ItemStockDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/OrderDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/OrderDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/PromoDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/PromoDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/SequenceDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/SequenceDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/StockLogDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/StockLogDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/UserDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/UserDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/UserPasswordDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/UserPasswordDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/ItemDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/ItemStockDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/OrderDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/PromoDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/SequenceDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/StockLogDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/UserDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/UserPasswordDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/mq/MqProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/mq/MqProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/PromoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/PromoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ItemDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ItemDOMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ItemStockDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ItemStockDOMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/OrderDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/OrderDOMapper.xml" afterDir="false" />
@@ -71,77 +43,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserDOMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/config/RedisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/config/WebServerConfiguration$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/config/WebServerConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/controller/BaseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/controller/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/controller/ItemController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/controller/OrderController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/controller/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/controller/viewobject/ItemVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/controller/viewobject/UserVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/controller/viewobject/ZuulException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dao/ItemDOMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dao/ItemStockDOMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dao/OrderDOMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dao/PromoDOMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dao/SequenceDOMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dao/StockLogDOMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dao/UserDOMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dao/UserPasswordDOMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dataobject/ItemDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dataobject/ItemStockDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dataobject/OrderDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dataobject/PromoDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dataobject/SequenceDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dataobject/StockLogDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dataobject/UserDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/dataobject/UserPasswordDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/error/BusinessException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/error/CommonError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/error/EmBusinessError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/mq/MqConsumer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/mq/MqConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/mq/MqProducer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/mq/MqProducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/response/CommonReturnType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/serializer/JodaDateTimeJsonDeserializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/serializer/JodaDateTimeJsonSerializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/CacheService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/ItemService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/PromoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/impl/CacheServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/impl/ItemServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/impl/OrderServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/impl/OrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/impl/PromoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/model/ItemModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/model/OrderModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/model/PromoModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/service/model/UserModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/util/CodeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/validator/ValidationResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaoshaproject/validator/ValidatorImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ItemDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ItemDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ItemStockDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ItemStockDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/OrderDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/OrderDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/PromoDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/PromoDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/SequenceDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/SequenceDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/StockLogDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/StockLogDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UserDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/UserDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UserPasswordDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/UserPasswordDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-generator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/miaosha-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/miaosha-1.0-SNAPSHOT.jar.original" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -157,64 +58,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/util/CodeUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/ItemStock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/validator/ValidationResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/validator/ValidatorImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/OrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/PromoService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -223,27 +70,97 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/PromoDOMapper.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/ItemDOMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/StockLog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Sequence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Promo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/ItemServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/OrderModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/ItemModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="15">
-                <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/UserModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -280,16 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/model/ItemModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/model/OrderModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/model/PromoModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/service/model/UserModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/controller/viewobject/ItemVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaoshaproject/controller/viewobject/UserVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/SequenceDO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-generator.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/config/RedisConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/config/WebServerConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/viewobject/ItemVO.java" />
@@ -326,6 +233,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/validator/ValidationResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/validator/ValidatorImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/App.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/ItemDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/OrderDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/PromoDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/SequenceDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/StockLogDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/UserDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/UserPasswordDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/ItemDOMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/ItemStockDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/ItemStock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Promo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Sequence.java" />
       </list>
     </option>
   </component>
@@ -640,7 +562,7 @@
       <workItem from="1564988536628" duration="5217000" />
       <workItem from="1565146153189" duration="817000" />
       <workItem from="1565255699033" duration="359000" />
-      <workItem from="1565334752288" duration="2107000" />
+      <workItem from="1565334752288" duration="3859000" />
     </task>
     <task id="LOCAL-00001" summary="branch dev">
       <created>1565334828325</created>
@@ -649,11 +571,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565334828327</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="done added lombok">
+      <created>1565346878071</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565346878071</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10515000" />
+    <option name="totallyTimeSpent" value="12267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -670,17 +599,17 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3226773" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.36163837" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36938775" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32959184" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -697,77 +626,38 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="branch dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="branch dev" />
+    <MESSAGE value="done added lombok" />
+    <option name="LAST_COMMIT_MESSAGE" value="done added lombok" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/SequenceDOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1261" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/StockLogDOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/UserPasswordDOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/test.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-generator.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/UserDOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/config/A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/config/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/config/WebServerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/viewobject/ItemVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/viewobject/UserVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/viewobject/ZuulException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -789,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/ItemController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -803,56 +686,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/ItemDOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/OrderDOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/ItemStockDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/SequenceDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/error/BusinessException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/error/CommonError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/error/EmBusinessError.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
@@ -876,45 +710,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/response/CommonReturnType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/serializer/JodaDateTimeJsonDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/serializer/JodaDateTimeJsonSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/CacheServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/ItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -932,34 +731,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/ItemModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/OrderModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/PromoModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/UserModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -974,13 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1001,7 +769,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/util/CodeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1029,23 +797,258 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/PromoDOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="15">
-            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/PromoDOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1416" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/config/WebServerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/ItemStockDOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/SequenceDOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/error/CommonError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/error/EmBusinessError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/serializer/JodaDateTimeJsonDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/response/CommonReturnType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/CacheServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1236">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1965">
+          <caret line="131" column="17" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-generator.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/UserPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="849">
+          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/OrderDOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dao/ItemDOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/ItemStock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Sequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/StockLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/dataobject/Promo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/impl/ItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/OrderModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/ItemModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rong/seckill/service/model/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>

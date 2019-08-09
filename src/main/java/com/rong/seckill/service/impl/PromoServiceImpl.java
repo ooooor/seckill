@@ -1,7 +1,7 @@
 package com.rong.seckill.service.impl;
 
 import com.rong.seckill.dao.PromoDOMapper;
-import com.rong.seckill.dataobject.PromoDO;
+import com.rong.seckill.dataobject.Promo;
 import com.rong.seckill.service.ItemService;
 import com.rong.seckill.service.PromoService;
 import com.rong.seckill.service.UserService;
@@ -40,10 +40,10 @@ public class PromoServiceImpl implements PromoService {
     @Override
     public PromoModel getPromoByItemId(Integer itemId) {
         //获取对应商品的秒杀活动信息
-        PromoDO promoDO = promoDOMapper.selectByItemId(itemId);
+        Promo promo = promoDOMapper.selectByItemId(itemId);
 
         //dataobject->model
-        PromoModel promoModel = convertFromDataObject(promoDO);
+        PromoModel promoModel = convertFromDataObject(promo);
         if(promoModel == null){
             return null;
         }
@@ -62,11 +62,11 @@ public class PromoServiceImpl implements PromoService {
     @Override
     public void publishPromo(Integer promoId) {
         //通过活动id获取活动
-        PromoDO promoDO = promoDOMapper.selectByPrimaryKey(promoId);
-        if(promoDO.getItemId() == null || promoDO.getItemId().intValue() == 0){
+        Promo promo = promoDOMapper.selectByPrimaryKey(promoId);
+        if(promo.getItemId() == null || promo.getItemId().intValue() == 0){
             return;
         }
-        ItemModel itemModel = itemService.getItemById(promoDO.getItemId());
+        ItemModel itemModel = itemService.getItemById(promo.getItemId());
 
         //将库存同步到redis内
         redisTemplate.opsForValue().set("promo_item_stock_"+itemModel.getId(), itemModel.getStock());
@@ -83,10 +83,10 @@ public class PromoServiceImpl implements PromoService {
         if(redisTemplate.hasKey("promo_item_stock_invalid_"+itemId)){
             return null;
         }
-        PromoDO promoDO = promoDOMapper.selectByPrimaryKey(promoId);
+        Promo promo = promoDOMapper.selectByPrimaryKey(promoId);
 
         //dataobject->model
-        PromoModel promoModel = convertFromDataObject(promoDO);
+        PromoModel promoModel = convertFromDataObject(promo);
         if(promoModel == null){
             return null;
         }
@@ -128,15 +128,15 @@ public class PromoServiceImpl implements PromoService {
         return token;
     }
 
-    private PromoModel convertFromDataObject(PromoDO promoDO){
-        if(promoDO == null){
+    private PromoModel convertFromDataObject(Promo promo){
+        if(promo == null){
             return null;
         }
         PromoModel promoModel = new PromoModel();
-        BeanUtils.copyProperties(promoDO,promoModel);
-        promoModel.setPromoItemPrice(new BigDecimal(promoDO.getPromoItemPrice()));
-        promoModel.setStartDate(new DateTime(promoDO.getStartDate()));
-        promoModel.setEndDate(new DateTime(promoDO.getEndDate()));
+        BeanUtils.copyProperties(promo,promoModel);
+        promoModel.setPromoItemPrice(new BigDecimal(promo.getPromoItemPrice()));
+        promoModel.setStartDate(new DateTime(promo.getStartDate()));
+        promoModel.setEndDate(new DateTime(promo.getEndDate()));
         return promoModel;
     }
 }

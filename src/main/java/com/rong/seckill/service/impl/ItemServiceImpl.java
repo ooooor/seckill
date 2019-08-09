@@ -2,9 +2,9 @@ package com.rong.seckill.service.impl;
 
 import com.rong.seckill.dao.ItemDOMapper;
 import com.rong.seckill.dao.StockLogDOMapper;
-import com.rong.seckill.dataobject.ItemDO;
-import com.rong.seckill.dataobject.ItemStockDO;
-import com.rong.seckill.dataobject.StockLogDO;
+import com.rong.seckill.dataobject.Item;
+import com.rong.seckill.dataobject.ItemStock;
+import com.rong.seckill.dataobject.StockLog;
 import com.rong.seckill.error.BusinessException;
 import com.rong.seckill.error.EmBusinessError;
 import com.rong.seckill.mq.MqProducer;
@@ -56,23 +56,23 @@ public class ItemServiceImpl implements ItemService {
     @Autowired
     private StockLogDOMapper stockLogDOMapper;
 
-    private ItemDO convertItemDOFromItemModel(ItemModel itemModel){
+    private Item convertItemDOFromItemModel(ItemModel itemModel){
         if(itemModel == null){
             return null;
         }
-        ItemDO itemDO = new ItemDO();
-        BeanUtils.copyProperties(itemModel,itemDO);
-        itemDO.setPrice(itemModel.getPrice().doubleValue());
-        return itemDO;
+        Item item = new Item();
+        BeanUtils.copyProperties(itemModel, item);
+        item.setPrice(itemModel.getPrice().doubleValue());
+        return item;
     }
-    private ItemStockDO convertItemStockDOFromItemModel(ItemModel itemModel){
+    private ItemStock convertItemStockDOFromItemModel(ItemModel itemModel){
         if(itemModel == null){
             return null;
         }
-        ItemStockDO itemStockDO = new ItemStockDO();
-        itemStockDO.setItemId(itemModel.getId());
-        itemStockDO.setStock(itemModel.getStock());
-        return itemStockDO;
+        ItemStock itemStock = new ItemStock();
+        itemStock.setItemId(itemModel.getId());
+        itemStock.setStock(itemModel.getStock());
+        return itemStock;
     }
 
     @Override
@@ -85,15 +85,15 @@ public class ItemServiceImpl implements ItemService {
         }
 
         //转化itemmodel->dataobject
-        ItemDO itemDO = this.convertItemDOFromItemModel(itemModel);
+        Item item = this.convertItemDOFromItemModel(itemModel);
 
         //写入数据库
-        itemDOMapper.insertSelective(itemDO);
-        itemModel.setId(itemDO.getId());
+        itemDOMapper.insertSelective(item);
+        itemModel.setId(item.getId());
 
-        ItemStockDO itemStockDO = this.convertItemStockDOFromItemModel(itemModel);
+        ItemStock itemStock = this.convertItemStockDOFromItemModel(itemModel);
 
-        itemStockDOMapper.insertSelective(itemStockDO);
+        itemStockDOMapper.insertSelective(itemStock);
 
         //返回创建完成的对象
         return this.getItemById(itemModel.getId());
@@ -101,10 +101,10 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public List<ItemModel> listItem() {
-        List<ItemDO> itemDOList = itemDOMapper.listItem();
-        List<ItemModel> itemModelList =  itemDOList.stream().map(itemDO -> {
-            ItemStockDO itemStockDO = itemStockDOMapper.selectByItemId(itemDO.getId());
-            ItemModel itemModel = this.convertModelFromDataObject(itemDO,itemStockDO);
+        List<Item> itemList = itemDOMapper.listItem();
+        List<ItemModel> itemModelList =  itemList.stream().map(item -> {
+            ItemStock itemStock = itemStockDOMapper.selectByItemId(item.getId());
+            ItemModel itemModel = this.convertModelFromDataObject(item, itemStock);
             return itemModel;
         }).collect(Collectors.toList());
         return itemModelList;
@@ -112,16 +112,16 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public ItemModel getItemById(Integer id) {
-        ItemDO itemDO = itemDOMapper.selectByPrimaryKey(id);
-        if(itemDO == null){
+        Item item = itemDOMapper.selectByPrimaryKey(id);
+        if(item == null){
             return null;
         }
         //操作获得库存数量
-        ItemStockDO itemStockDO = itemStockDOMapper.selectByItemId(itemDO.getId());
+        ItemStock itemStock = itemStockDOMapper.selectByItemId(item.getId());
 
 
         //将dataobject->model
-        ItemModel itemModel = convertModelFromDataObject(itemDO,itemStockDO);
+        ItemModel itemModel = convertModelFromDataObject(item, itemStock);
 
         //获取活动商品信息
         PromoModel promoModel = promoService.getPromoByItemId(itemModel.getId());
@@ -188,23 +188,23 @@ public class ItemServiceImpl implements ItemService {
     @Override
     @Transactional
     public String initStockLog(Integer itemId, Integer amount) {
-        StockLogDO stockLogDO = new StockLogDO();
-        stockLogDO.setItemId(itemId);
-        stockLogDO.setAmount(amount);
-        stockLogDO.setStockLogId(UUID.randomUUID().toString().replace("-",""));
-        stockLogDO.setStatus(1);
+        StockLog stockLog = new StockLog();
+        stockLog.setItemId(itemId);
+        stockLog.setAmount(amount);
+        stockLog.setStockLogId(UUID.randomUUID().toString().replace("-",""));
+        stockLog.setStatus(1);
 
-        stockLogDOMapper.insertSelective(stockLogDO);
+        stockLogDOMapper.insertSelective(stockLog);
 
-        return stockLogDO.getStockLogId();
+        return stockLog.getStockLogId();
 
     }
 
-    private ItemModel convertModelFromDataObject(ItemDO itemDO,ItemStockDO itemStockDO){
+    private ItemModel convertModelFromDataObject(Item item, ItemStock itemStock){
         ItemModel itemModel = new ItemModel();
-        BeanUtils.copyProperties(itemDO,itemModel);
-        itemModel.setPrice(new BigDecimal(itemDO.getPrice()));
-        itemModel.setStock(itemStockDO.getStock());
+        BeanUtils.copyProperties(item,itemModel);
+        itemModel.setPrice(new BigDecimal(item.getPrice()));
+        itemModel.setStock(itemStock.getStock());
 
         return itemModel;
     }

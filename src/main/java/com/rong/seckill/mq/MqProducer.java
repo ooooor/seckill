@@ -2,7 +2,7 @@ package com.rong.seckill.mq;
 
 import com.alibaba.fastjson.JSON;
 import com.rong.seckill.dao.StockLogDOMapper;
-import com.rong.seckill.dataobject.StockLogDO;
+import com.rong.seckill.dataobject.StockLog;
 import com.rong.seckill.error.BusinessException;
 import com.rong.seckill.service.OrderService;
 import org.apache.rocketmq.client.exception.MQBrokerException;
@@ -69,9 +69,9 @@ public class MqProducer {
                 } catch (BusinessException e) {
                     e.printStackTrace();
                     //设置对应的stockLog为回滚状态
-                    StockLogDO stockLogDO = stockLogDOMapper.selectByPrimaryKey(stockLogId);
-                    stockLogDO.setStatus(3);
-                    stockLogDOMapper.updateByPrimaryKeySelective(stockLogDO);
+                    StockLog stockLog = stockLogDOMapper.selectByPrimaryKey(stockLogId);
+                    stockLog.setStatus(3);
+                    stockLogDOMapper.updateByPrimaryKeySelective(stockLog);
                     return LocalTransactionState.ROLLBACK_MESSAGE;
                 }
                 return LocalTransactionState.COMMIT_MESSAGE;
@@ -85,13 +85,13 @@ public class MqProducer {
                 Integer itemId = (Integer) map.get("itemId");
                 Integer amount = (Integer) map.get("amount");
                 String stockLogId = (String) map.get("stockLogId");
-                StockLogDO stockLogDO = stockLogDOMapper.selectByPrimaryKey(stockLogId);
-                if(stockLogDO == null){
+                StockLog stockLog = stockLogDOMapper.selectByPrimaryKey(stockLogId);
+                if(stockLog == null){
                     return LocalTransactionState.UNKNOW;
                 }
-                if(stockLogDO.getStatus().intValue() == 2){
+                if(stockLog.getStatus().intValue() == 2){
                     return LocalTransactionState.COMMIT_MESSAGE;
-                }else if(stockLogDO.getStatus().intValue() == 1){
+                }else if(stockLog.getStatus().intValue() == 1){
                     return LocalTransactionState.UNKNOW;
                 }
                 return LocalTransactionState.ROLLBACK_MESSAGE;

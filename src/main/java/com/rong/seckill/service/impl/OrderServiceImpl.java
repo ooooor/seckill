@@ -2,8 +2,8 @@ package com.rong.seckill.service.impl;
 
 import com.rong.seckill.dao.OrderDOMapper;
 import com.rong.seckill.dao.StockLogDOMapper;
-import com.rong.seckill.dataobject.SequenceDO;
-import com.rong.seckill.dataobject.StockLogDO;
+import com.rong.seckill.dataobject.Sequence;
+import com.rong.seckill.dataobject.StockLog;
 import com.rong.seckill.error.BusinessException;
 import com.rong.seckill.error.EmBusinessError;
 import com.rong.seckill.service.ItemService;
@@ -12,7 +12,7 @@ import com.rong.seckill.service.UserService;
 import com.rong.seckill.service.model.ItemModel;
 import com.rong.seckill.service.model.OrderModel;
 import com.rong.seckill.dao.SequenceDOMapper;
-import com.rong.seckill.dataobject.OrderDO;
+import com.rong.seckill.dataobject.Order;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -99,19 +99,19 @@ public class OrderServiceImpl implements OrderService {
 
         //生成交易流水号,订单号
         orderModel.setId(generateOrderNo());
-        OrderDO orderDO = convertFromOrderModel(orderModel);
-        orderDOMapper.insertSelective(orderDO);
+        Order order = convertFromOrderModel(orderModel);
+        orderDOMapper.insertSelective(order);
 
         //加上商品的销量
         itemService.increaseSales(itemId,amount);
 
         //设置库存流水状态为成功
-        StockLogDO stockLogDO = stockLogDOMapper.selectByPrimaryKey(stockLogId);
-        if(stockLogDO == null){
+        StockLog stockLog = stockLogDOMapper.selectByPrimaryKey(stockLogId);
+        if(stockLog == null){
             throw new BusinessException(EmBusinessError.UNKNOWN_ERROR);
         }
-        stockLogDO.setStatus(2);
-        stockLogDOMapper.updateByPrimaryKeySelective(stockLogDO);
+        stockLog.setStatus(2);
+        stockLogDOMapper.updateByPrimaryKeySelective(stockLog);
 
         TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronizationAdapter() {
                 @Override
@@ -145,7 +145,7 @@ public class OrderServiceImpl implements OrderService {
         //中间6位为自增序列
         //获取当前sequence
         int sequence = 0;
-        SequenceDO sequenceDO =  sequenceDOMapper.getSequenceByName("order_info");
+        Sequence sequenceDO =  sequenceDOMapper.getSequenceByName("order_info");
         sequence = sequenceDO.getCurrentValue();
         sequenceDO.setCurrentValue(sequenceDO.getCurrentValue() + sequenceDO.getStep());
         sequenceDOMapper.updateByPrimaryKeySelective(sequenceDO);
@@ -161,14 +161,14 @@ public class OrderServiceImpl implements OrderService {
 
         return stringBuilder.toString();
     }
-    private OrderDO convertFromOrderModel(OrderModel orderModel){
+    private Order convertFromOrderModel(OrderModel orderModel){
         if(orderModel == null){
             return null;
         }
-        OrderDO orderDO = new OrderDO();
-        BeanUtils.copyProperties(orderModel,orderDO);
-        orderDO.setItemPrice(orderModel.getItemPrice().doubleValue());
-        orderDO.setOrderPrice(orderModel.getOrderPrice().doubleValue());
-        return orderDO;
+        Order order = new Order();
+        BeanUtils.copyProperties(orderModel, order);
+        order.setItemPrice(orderModel.getItemPrice().doubleValue());
+        order.setOrderPrice(orderModel.getOrderPrice().doubleValue());
+        return order;
     }
 }
