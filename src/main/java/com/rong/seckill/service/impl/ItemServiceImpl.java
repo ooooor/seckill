@@ -1,6 +1,6 @@
 package com.rong.seckill.service.impl;
 
-import com.rong.seckill.dao.ItemDOMapper;
+import com.rong.seckill.dao.ItemMapper;
 import com.rong.seckill.dao.StockLogDOMapper;
 import com.rong.seckill.dataobject.Item;
 import com.rong.seckill.dataobject.ItemStock;
@@ -42,7 +42,7 @@ public class ItemServiceImpl implements ItemService {
     private ValidatorImpl validator;
 
     @Autowired
-    private ItemDOMapper itemDOMapper;
+    private ItemMapper itemMapper;
 
     @Autowired
     private PromoService promoService;
@@ -88,7 +88,7 @@ public class ItemServiceImpl implements ItemService {
         Item item = this.convertItemDOFromItemModel(itemModel);
 
         //写入数据库
-        itemDOMapper.insertSelective(item);
+        itemMapper.insertSelective(item);
         itemModel.setId(item.getId());
 
         ItemStock itemStock = this.convertItemStockDOFromItemModel(itemModel);
@@ -101,7 +101,7 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public List<ItemModel> listItem() {
-        List<Item> itemList = itemDOMapper.listItem();
+        List<Item> itemList = itemMapper.listItem();
         List<ItemModel> itemModelList =  itemList.stream().map(item -> {
             ItemStock itemStock = itemStockDOMapper.selectByItemId(item.getId());
             ItemModel itemModel = this.convertModelFromDataObject(item, itemStock);
@@ -112,7 +112,7 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public ItemModel getItemById(Integer id) {
-        Item item = itemDOMapper.selectByPrimaryKey(id);
+        Item item = itemMapper.selectByPrimaryKey(id);
         if(item == null){
             return null;
         }
@@ -181,7 +181,7 @@ public class ItemServiceImpl implements ItemService {
     @Override
     @Transactional
     public void increaseSales(Integer itemId, Integer amount) throws BusinessException {
-        itemDOMapper.increaseSales(itemId,amount);
+        itemMapper.increaseSales(itemId,amount);
     }
 
     //初始化对应的库存流水
