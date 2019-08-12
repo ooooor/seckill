@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Objects;
 import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
@@ -55,7 +56,7 @@ public class UserController  extends BaseController{
                                      @RequestParam(name="password")String password) throws BusinessException, UnsupportedEncodingException, NoSuchAlgorithmException {
         //验证手机号和对应的otpcode相符合
         String inSessionOtpCode = (String) this.httpServletRequest.getSession().getAttribute(telphone);
-        if(!com.alibaba.druid.util.StringUtils.equals(otpCode,inSessionOtpCode)){
+        if(!Objects.equals(otpCode, inSessionOtpCode)){
             throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR,"短信验证码不符合");
         }
         //用户的注册流程
